@@ -9,9 +9,12 @@ let movesNumber = 0; //Cuando sea 9 entonces completedGame = true
 
 // let addPiece = () => { console.log('Esta funcionando')}
 let addPiece = (btn) => {
-    btn.innerHTML = console.log(pieces[game])
-    movesNumber += 1;
+    game++;
+    //btn = console.log(game % 2 ? console.log(pieces[0]) : console.log(pieces[1]))
+    btn = document.getElementById('boarButton')
+    btn.innerHTML = game % 2 ? pieces[0] : pieces[1]
 }
+
 
 let allButtons = document.querySelectorAll('button.boardButton')
 allButtons.forEach(ind => ind.addEventListener('click', addPiece))
