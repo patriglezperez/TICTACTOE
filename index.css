@@ -1,28 +1,98 @@
+/* @font-face {
+    font-family:"DK Limoen";
+    src: url("DK-Limoen.otf")
+  } */
+
 body{
-    background-color: pink;
-    color: white;
+    /* font-family:"DK Limoen", sans-serif; */
+    background-color: #fbece8;
+    color:#075e35;
     align-content: center;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-content: center;
+    flex-direction: column;
 }
 
 .board{
     display: flex;
     flex-wrap: wrap;
-    height: 600px;
-    width:600px;
+    height: 450px;
+    width:450px;
     /* background-color: blue;  */
     margin: auto;
     margin-top: 50px;
 } 
 
 .boardButton{
-    width: 200px;
-    height: 200px;
-    color: black;
-    font-size: 60px;
-    
+    width: 150px;
+    height: 150px;
+    color: #cb6c50;
+    background-color: white;
+    border-color: none;
+    font-size: 100px;
+    font-weight: bolder;
+    border-style: solid;
+    border-color: #075e35;
+    border-width: 5px;
 }
+
+    .btn0{
+        border-left: none;
+        border-top: none;
+    }
+
+    .btn1{
+        border-top: none;
+    }
+
+    .btn2{
+        border-top: none;
+        border-right: none;
+    }
+
+    .btn3{
+        border-left: none;
+    }
+
+    .btn5{
+        border-right: none;
+    }
+
+    .btn6{
+        border-left: none;
+        border-bottom: none;
+    }
+
+    .btn7{
+        border-bottom: none;
+    }
+
+    .btn8{
+        border-right: none;
+        border-bottom: none;
+    }
+
+    #titleName , #winner{
+        display: flex; 
+        margin: auto;
+        font-size: 50px;
+    }
+
+        span{
+            -webkit-text-stroke: 1px #cb6c50;
+            color: white;
+        }
+    .player, #winner{
+        display: flex; 
+        flex-direction: column;
+        margin: auto;
+        font-size: 20px;
+        color: #075e35;
+       
+    }
+     #winner p{
+        margin:10px;
+     }
