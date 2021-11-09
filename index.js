@@ -9,11 +9,18 @@ let movesNumber = 0;
 let addPiece = (event) => {
 
     let currentTurn = game % 2 ? player_O : player_X;
+
     game++;
 
     let button = event.target
     if (!completedGame && button.innerHTML == "") {
         button.innerHTML = currentTurn
+        /* let playerDisplay = document.getElementsById('player').innerHTML
+        if(currentTurn == 'X'){
+           playerDisplay.classList.add('playerX')
+        } else {
+            playerDisplay.classList.add('playerO')
+        } */
         movesNumber++;
     }
 
@@ -21,8 +28,15 @@ let addPiece = (event) => {
     document.getElementById(id).disabled = true;
 
     let nextTurn = game % 2 ? 'O' : 'X';
-    document.getElementById('player').innerHTML = `Turno del jugador ${nextTurn}`
-    if (validate()) alert ('enhorabuena player ' + currentTurn)
+     
+    document.getElementById('player').innerHTML = `${nextTurn}`
+    
+    if (validate()){
+        document.getElementById('winner').innerHTML += `¡¡ The winner is ${currentTurn} player !!`
+        if (currentTurn == "X" ) {
+    
+        }
+    } 
 }
 
 /* function Validate (...args) { //entran los botones
@@ -50,37 +64,28 @@ function validate() {
         if ((c0 == c1) && (c0 == c2) && (c0)) {
             //document.style.backgroundColor = 'Fuchsia'
             return true;
-            break;
         } else if ((c3 == c4) && (c3 === c5) && (c5)) {
             return true;
-            break;
         } else if ((c6 == c7) && (c6 === c8) && (c6)) {
             return true;
-            break;
         } else if ((c0 == c3) && (c0 == c6) && (c0)) {
             return true;
-            break;
         } else if ((c1 == c4) && (c1 == c7) && (c1)) {
             return true;
-            break;
         } else if ((c2 == c5) && (c2 == c8) && (c2)) {
             return true;
-            break;
         } else if ((c0 == c4) && (c0 == c8) && (c0)) {
             return true;
-            break;
         }else if ((c2 == c4 ) && (c2 === c6) && (c2)){
             return true;
-                break;
         } else {
             return false;
-            break;
         }
     } 
 }
 
-if (movesNumber > 9 || validate !=false){
+/* if (movesNumber > 9 || validate !=false){
     console.log('fin del juego')
 } else {
     console.log('sigue jugando')
-}
+} */

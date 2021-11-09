@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <h2 id="titleName">TIC <span>TAC</span> TOE</h2>
+    <h2 id="titleName">TIC <span>TAC </span> TOE</h2>
     <div class="board">
         <button type="button" class="boardButton btn0" onclick="addPiece(event)" value=" " id=0></button>
 
@@ -29,10 +29,11 @@
         <button type="button" class="boardButton btn8" onclick="addPiece(event)" value=" " id=8></button>
     </div>
     
-    <div id="winner">
-        <p id="player">Turno del jugador X </p>
-        <p>El ganador es </p>
-        <button onclick="reset()">Try again</button>
+    <div id="gamer">
+        <p>Player <span id="player">X</span>'s turn </p>
+        <button id="reset" onclick="reset()">Reset</button>
+        <p id="winner"></p>
+        
     </div>
     <script src="./index.js"></script>
 </body>

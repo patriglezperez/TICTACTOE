@@ -1,15 +1,16 @@
-/* @font-face {
+ @font-face {
     font-family:"DK Limoen";
-    src: url("DK-Limoen.otf")
-  } */
+    src: url("DK Limoen.otf")
+  } 
 
+*{
+    font-family:"DK Limoen", sans-serif;
+}
 body{
-    /* font-family:"DK Limoen", sans-serif; */
+    
     background-color: #fbece8;
     color:#075e35;
     align-content: center;
-    width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -19,24 +20,24 @@ body{
 .board{
     display: flex;
     flex-wrap: wrap;
-    height: 450px;
-    width:450px;
-    /* background-color: blue;  */
+    height: 375px;
+    width:375px;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 30px;
 } 
 
 .boardButton{
-    width: 150px;
-    height: 150px;
-    color: #cb6c50;
-    background-color: white;
+    width: 125px;
+    height: 125px;
+    color: #ee673b;
+    background-color: #fbece8;
     border-color: none;
-    font-size: 100px;
+    font-size: 80px;
     font-weight: bolder;
     border-style: solid;
+    font-family: sans-serif;
     border-color: #075e35;
-    border-width: 5px;
+    border-width: 3px;
 }
 
     .btn0{
@@ -75,24 +76,60 @@ body{
         border-bottom: none;
     }
 
-    #titleName , #winner{
+    #titleName {
         display: flex; 
         margin: auto;
-        font-size: 50px;
+        font-size: 70px;
+        letter-spacing: 20px;
+        width: 500px;
+        padding-left: 40px;
     }
 
-        span{
-            -webkit-text-stroke: 1px #cb6c50;
-            color: white;
+        h2 > span {
+            /*-webkit-text-stroke: 1px #cb6c50;*/
+            color: #eb6032;
+            letter-spacing: 0px;
+            padding-left: 5px;
+            padding-right: 20px;
         }
-    .player, #winner{
-        display: flex; 
-        flex-direction: column;
-        margin: auto;
-        font-size: 20px;
-        color: #075e35;
-       
+
+#gamer{
+    display: flex; 
+    flex-direction: column;
+    margin: auto;
+    font-size: 40px;
+    color: #075e35;
+    justify-content: center;
+    align-items: center;
+    
+}
+    #gamer p{
+    margin:5px;
     }
-     #winner p{
-        margin:10px;
-     }
+    
+    .playerX{
+        color:blue;
+    }
+    .playerO{
+        color: green;
+    }
+
+#winner{
+    color: #eb6032;
+    font-size: bolder;
+}
+
+
+
+#reset{
+    font-size: 20px;
+    height: 40px;
+    width: 50%;
+    justify-content: center;
+    align-content: center;
+    border-radius: 20px;
+    color:#eb6032;
+    font-family: sans-serif;
+    background-color: #075e35;
+}
+
