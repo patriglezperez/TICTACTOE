@@ -29,7 +29,7 @@ body{
 .boardButton{
     width: 125px;
     height: 125px;
-    color: #ee673b;
+    color:black;
     background-color: #fbece8;
     border-color: none;
     font-size: 80px;
@@ -119,7 +119,9 @@ body{
     font-size: bolder;
 }
 
-
+.hide{
+    display: none;
+}
 
 #reset{
     font-size: 20px;

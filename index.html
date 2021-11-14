@@ -14,25 +14,20 @@
     <h2 id="titleName">TIC <span>TAC </span> TOE</h2>
     <div class="board">
         <button type="button" class="boardButton btn0" onclick="addPiece(event)" value=" " id=0></button>
-
         <button type="button" class="boardButton btn1" onclick="addPiece(event)" value=" " id=1></button>
-
         <button type="button" class="boardButton btn2" onclick="addPiece(event)" value=" " id=2></button>
-
         <button type="button" class="boardButton btn3" onclick="addPiece(event)" value=" " id=3></button>
-
         <button type="button" class="boardButton btn4" onclick="addPiece(event)" value=" " id=4></button>
-
         <button type="button" class="boardButton btn5" onclick="addPiece(event)" value=" " id=5></button>
         <button type="button" class="boardButton btn6" onclick="addPiece(event)" value=" " id=6></button>
         <button type="button" class="boardButton btn7" onclick="addPiece(event)" value=" " id=7></button>
-        <button type="button" class="boardButton btn8" onclick="addPiece(event)" value=" " id=8></button>
+        <button type="button" class="boardButton btn8" onclick="addPiece(event)" value="" id=8></button>
     </div>
     
     <div id="gamer">
-        <p>Player <span id="player">X</span>'s turn </p>
+        <p>Player <span class="display-player playerX">X</span>'s turn </p>
         <button id="reset" onclick="reset()">Reset</button>
-        <p id="winner"></p>
+        <p class="announcer hide"></p>
         
     </div>
     <script src="./index.js"></script>
