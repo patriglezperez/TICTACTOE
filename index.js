@@ -24,7 +24,7 @@ function changePlayer() {
 
 function addPiece(event) {
     let button = event.target;
-    let id = event.target.id ;
+    let id = event.target.id;
     document.getElementById(id).disabled = true;
     button.innerHTML = currentPlayer;
     button.classList.remove(`player${currentPlayer}`);
@@ -75,34 +75,35 @@ function addPiece(event) {
         playerDisplay.classList.add('hide');
         gamerDisplay.classList.add('hide');
     }
-    if ((isGameActive) && (won === true)) {
+    if ((isGameActive) && (won)) {
         announce(currentPlayer === 'X' ? PLAYERO_WON : PLAYERX_WON);
         isGameActive = false;
-        return;
+        /*for (i = 0; i > buttons.length; i++) {
+            buttons[i].disabled = true
+        }*/
+        buttons[0].disabled = true;
+        buttons[1].disabled = true;
+        buttons[2].disabled = true;
+        buttons[3].disabled = true;
+        buttons[4].disabled = true;
+        buttons[5].disabled = true;
+        buttons[6].disabled = true;
+        buttons[7].disabled = true;
+        buttons[8].disabled = true;
     }
 
-    if (movesNumber >= 9 || !isGameActive){
-        buttons.disabled = true;
-        reset();
-    }
-}
+    if (movesNumber >= 9 || !isGameActive) {
 
-function reset() {
-    isGameActive = true;
-
-    announcer.classList.add('hide');
-    resetButton.classList.add('hide');
-
-    if (currentPlayer === 'O') {
-        changePlayer();
-    }
-
-    buttons.forEach(button => {
+        buttons[0].disabled = true;
+        buttons[1].disabled = true;
+        buttons[2].disabled = true;
+        buttons[3].disabled = true;
+        buttons[4].disabled = true;
+        buttons[5].disabled = true;
+        buttons[6].disabled = true;
+        buttons[7].disabled = true;
+        buttons[8].disabled = true;
         
-        button.innerText = '';
-        button.classList.remove('playerX');
-        button.classList.remove('playerO');
-    });
-
-   addPiece()
+    }
 }
+
