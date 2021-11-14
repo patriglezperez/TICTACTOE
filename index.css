@@ -23,7 +23,7 @@ body{
     height: 375px;
     width:375px;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 0px;
 } 
 
 .boardButton{
@@ -36,7 +36,7 @@ body{
     font-weight: bolder;
     border-style: solid;
     /* font-family: sans-serif; */
-    border-color: #075e35;
+    border-color: #307740;
     border-width: 3px;
 }
 
@@ -76,21 +76,29 @@ body{
         border-bottom: none;
     }
 
-    #titleName {
+    .titleName{
+        display: flex; 
+        justify-content: center;  
+        font-size: 40px;
+        letter-spacing: 15px;
+        min-width: 500px;
+        color: #307740
+    }
+
+    .title {
         display: flex; 
         margin: auto;
-        font-size: 70px;
-        letter-spacing: 20px;
         width: 500px;
         padding-left: 40px;
+        font-size: 50px;
     }
 
         h2 > span {
             /*-webkit-text-stroke: 1px #cb6c50;*/
             color: #eb6032;
-            letter-spacing: 0px;
-            padding-left: 5px;
-            padding-right: 20px;
+            font-size: 50px;
+            margin: 0px;  
+            padding: 0px;
         }
 
 #gamer{
@@ -98,20 +106,21 @@ body{
     flex-direction: column;
     margin: auto;
     font-size: 40px;
-    color: #075e35;
+    color: #307740;
     justify-content: center;
     align-items: center;
     
 }
     #gamer p{
-    margin:5px;
+    margin:20px;
     }
     
     .playerX{
-        color:blue;
+        color:#4280be;
     }
+
     .playerO{
-        color: green;
+        color: #b593bc;
     }
 
 #winner{
@@ -126,13 +135,19 @@ body{
 .reset{
     font-size: 20px;
     height: 40px;
-    width: 50%;
+    width: 30%;
     justify-content: center;
     align-content: center;
     border-radius: 20px;
     color:#eb6032;
-    /* font-family: sans-serif; */
-    background-color: #fbece8;
+    margin-top: 30px;
+    color: #fbece8;
+    background-color: #307740;
+}
+.reset:hover{
+   background:#eb6032;
+   color:black;
+   transition: ease-in-out 0.1s; 
 }
 
 .announcer {

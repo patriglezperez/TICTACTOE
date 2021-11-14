@@ -64,10 +64,10 @@ function addPiece(event) {
     const announce = (type) => {
         switch (type) {
             case PLAYERO_WON:
-                announcer.innerHTML = 'Player <span class="playerO">O</span> Won';
+                announcer.innerHTML = '¡¡ Player <span class="playerO">O</span> Won !!';
                 break;
             case PLAYERX_WON:
-                announcer.innerHTML = 'Player <span class="playerX">X</span> Won';
+                announcer.innerHTML = '¡¡ Player <span class="playerX">X</span> Won !!';
                 break;
         }
         announcer.classList.remove('hide');
@@ -104,6 +104,7 @@ function addPiece(event) {
         buttons[7].disabled = true;
         buttons[8].disabled = true;
         
+        resetButton.classList.remove('hide');
     }
 }
 

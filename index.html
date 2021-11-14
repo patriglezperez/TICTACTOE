@@ -11,7 +11,10 @@
 </head>
 
 <body>
-    <h2 id="titleName">TIC <span>TAC </span> TOE</h2>
+    <div class="titleName">
+        <h2 id="title">TIC <span>TAC</span> TOE</h2>
+    </div>
+    
     <div class="board">
         <button type="button" class="boardButton btn0" onclick="addPiece(event)" value=" " id=0></button>
         <button type="button" class="boardButton btn1" onclick="addPiece(event)" value=" " id=1></button>
@@ -26,10 +29,10 @@
     
     <div id="gamer">
         <p class='gamerDisplay'>Player <span class="display playerX">X</span>'s turn </p>
-        <button class="reset hide" onclick="location.reload()">Reset</button>
+        <button class="reset hide" onclick="location.reload()">Again</button>
         <p class="announcer hide"></p>
-        
     </div>
+
     <script src="./index.js"></script>
 </body>
 
