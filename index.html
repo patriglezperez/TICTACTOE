@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Three</title>
-    <script src="./index.js"></script>
+    <title>Tic Tac Toe</title>
+
     <link rel="stylesheet" href="./index.css">
 </head>
+
 <body>
+    <h2 id="titleName">TIC <span>TAC </span> TOE</h2>
+    <div class="board">
+        <button type="button" class="boardButton btn0" onclick="addPiece(event)" value=" " id=0></button>
+        <button type="button" class="boardButton btn1" onclick="addPiece(event)" value=" " id=1></button>
+        <button type="button" class="boardButton btn2" onclick="addPiece(event)" value=" " id=2></button>
+        <button type="button" class="boardButton btn3" onclick="addPiece(event)" value=" " id=3></button>
+        <button type="button" class="boardButton btn4" onclick="addPiece(event)" value=" " id=4></button>
+        <button type="button" class="boardButton btn5" onclick="addPiece(event)" value=" " id=5></button>
+        <button type="button" class="boardButton btn6" onclick="addPiece(event)" value=" " id=6></button>
+        <button type="button" class="boardButton btn7" onclick="addPiece(event)" value=" " id=7></button>
+        <button type="button" class="boardButton btn8" onclick="addPiece(event)" value="" id=8></button>
+    </div>
     
+    <div id="gamer">
+        <p class='gamerDisplay'>Player <span class="display playerX">X</span>'s turn </p>
+        <button class="reset hide" onclick="reset()">Reset</button>
+        <p class="announcer hide"></p>
+        
+    </div>
+    <script src="./index.js"></script>
 </body>
+
 </html>
